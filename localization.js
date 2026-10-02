@@ -1,0 +1,190 @@
+// Page text for each language. Milestones are ordered to match the carousel slides.
+const translations = {
+  en: {
+    pageTitle: "Intel: Sustainability Through the Ages",
+    languageLabel: "Language",
+    heroTitle: "Sustainability Through the Ages",
+    heroIntro: "Explore Intel's journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.",
+    timelineHeading: "A Timeline of Progress",
+    timelineIntro: "Explore the milestones shaping a more sustainable future for technology",
+    carouselLabel: "Intel sustainability timeline",
+    previous: "Previous milestone",
+    next: "Next milestone",
+    goTo: "Go to",
+    sustainabilityHeading: "Building a More Sustainable Future",
+    areas: [
+      ["Climate Action", "Reducing emissions and working toward net-zero operations."],
+      ["Water Stewardship", "Conserving water and supporting healthy watersheds."],
+      ["Waste Reduction", "Reducing waste through reuse and more circular practices."]
+    ],
+    milestones: [
+      ["THE BEGINNING", "Intel Is Founded", "Robert Noyce and Gordon Moore rename the newly formed company NM Electronics to Intel Corporation, laying the foundation for decades of technological innovation.", "Every sustainability journey starts with the choices built into a company. Intel's early focus on innovation would later make it possible to rethink how computing is designed and manufactured.", "Robert Noyce and Gordon Moore, Intel's founders"],
+      ["COMPUTING, REIMAGINED", "The First Microprocessor", "Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution and propelling the future of computing devices.", "Putting processing power on a tiny chip changed what technology could do. Generations of smaller, more capable devices followed, expanding computing into everyday life.", "Intel 4004 microprocessor"],
+      ["A LASTING ARCHITECTURE", "The 8086 Processor", "The 8086 processor establishes the x86 architecture that drives countless PCs and servers in the modern era.", "A shared architecture helped software and hardware evolve across generations. That long-running platform continues to support new approaches to computing performance and efficiency.", "Intel 8086 processor"],
+      ["MORE CAPABILITY", "The 386 Processor", "Intel introduces the 386 processor with 32-bit architecture, ushering in a new era of performance and multitasking for personal computers.", "More capable processors opened the door to richer software and new ways to work. The next challenge was delivering that capability while improving how efficiently systems use energy.", "Intel 386 processor"],
+      ["A TURNING POINT", "Peak Greenhouse Gas Emissions", "This year marks Intel's highest annual greenhouse gas emissions for operations. In subsequent years, Intel invests in chemical abatement, renewable energy, and energy-efficient manufacturing.", "Measuring a peak made the scale of the challenge visible. Long-term investment in cleaner operations became a key part of reversing the trend.", "Greenhouse gas emissions milestone"],
+      ["GOALS FOR 2030", "The RISE Strategy", "Intel launches its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy and 2030 goals, aiming to drive progress on climate action, water stewardship, and waste reduction.", "The strategy connects environmental goals with responsibility and inclusion, and invites progress across the broader technology industry.", "Intel RISE sustainability strategy"],
+      ["A LONG-TERM COMMITMENT", "Net-Zero by 2040", "Intel announces its commitment to achieve net-zero greenhouse gas emissions (Scope 1 and 2) across its global operations by 2040.", "A clear target gives teams and partners a shared destination. Reaching it depends on sustained work across facilities, energy, and manufacturing.", "Intel net-zero commitment"],
+      ["POWERING PROGRESS", "99% Renewable Electricity", "The company achieves 99% renewable electricity usage worldwide, helping lower carbon emissions and advance its long-term sustainability goals.", "The milestone demonstrates how purchasing and sourcing decisions can change the energy behind global operations, while work toward long-term targets continues.", "Renewable electricity supporting Intel operations"],
+      ["COLLABORATION AT SCALE", "Sustainability Summit", "Intel hosts its first Sustainability Summit, uniting suppliers, government officials, and industry leaders to collaborate on sustainable semiconductor manufacturing.", "Semiconductor supply chains are interconnected. Bringing partners together helps turn shared climate, water, and waste challenges into coordinated action.", "Intel sustainability summit"]
+    ]
+  },
+  es: {
+    pageTitle: "Intel: Sostenibilidad a través del tiempo",
+    languageLabel: "Idioma",
+    heroTitle: "Sostenibilidad a través del tiempo",
+    heroIntro: "Descubre el recorrido de Intel y cómo su compromiso con la innovación ha contribuido a un futuro más sostenible para la tecnología y el planeta.",
+    timelineHeading: "Una cronología del progreso",
+    timelineIntro: "Descubre los hitos que impulsan un futuro más sostenible para la tecnología",
+    carouselLabel: "Cronología de sostenibilidad de Intel",
+    previous: "Hito anterior",
+    next: "Hito siguiente",
+    goTo: "Ir al año",
+    sustainabilityHeading: "Construir un futuro más sostenible",
+    areas: [
+      ["Acción climática", "Reducir las emisiones y avanzar hacia operaciones con cero emisiones netas."],
+      ["Gestión del agua", "Conservar el agua y apoyar cuencas hidrográficas saludables."],
+      ["Reducción de residuos", "Reducir los residuos mediante la reutilización y prácticas circulares."]
+    ],
+    milestones: [
+      ["LOS INICIOS", "Se funda Intel", "Robert Noyce y Gordon Moore cambian el nombre de NM Electronics, la empresa recién creada, a Intel Corporation, sentando las bases de décadas de innovación tecnológica.", "Todo camino hacia la sostenibilidad comienza con las decisiones de una empresa. El enfoque inicial de Intel en la innovación permitiría replantear el diseño y la fabricación de la informática.", "Robert Noyce y Gordon Moore, fundadores de Intel"],
+      ["UNA NUEVA ERA INFORMÁTICA", "El primer microprocesador", "Intel presenta el 4004, el primer microprocesador comercial del mundo, que inicia la revolución de los microprocesadores e impulsa el futuro de los dispositivos informáticos.", "Integrar la capacidad de procesamiento en un pequeño chip cambió las posibilidades de la tecnología. Después llegaron dispositivos más pequeños y potentes que extendieron la informática a la vida cotidiana.", "Microprocesador Intel 4004"],
+      ["UNA ARQUITECTURA DURADERA", "El procesador 8086", "El procesador 8086 establece la arquitectura x86 que impulsa innumerables PC y servidores en la actualidad.", "Una arquitectura compartida permitió que el software y el hardware evolucionaran durante generaciones. Esta plataforma sigue respaldando nuevas formas de mejorar el rendimiento y la eficiencia informática.", "Procesador Intel 8086"],
+      ["MÁS CAPACIDAD", "El procesador 386", "Intel presenta el procesador 386 con arquitectura de 32 bits, iniciando una nueva era de rendimiento y multitarea en los ordenadores personales.", "Los procesadores más potentes dieron paso a programas más avanzados y nuevas formas de trabajar. El reto pasó a ser ofrecer esa capacidad usando la energía con mayor eficiencia.", "Procesador Intel 386"],
+      ["UN PUNTO DE INFLEXIÓN", "Máximo de emisiones de gases de efecto invernadero", "Este año registra las mayores emisiones anuales de gases de efecto invernadero de las operaciones de Intel. En los años siguientes, Intel invierte en reducción de emisiones químicas, energías renovables y fabricación eficiente.", "Medir el máximo hizo visible la magnitud del desafío. La inversión a largo plazo en operaciones más limpias se convirtió en una parte clave de la solución.", "Hito de emisiones de gases de efecto invernadero"],
+      ["OBJETIVOS PARA 2030", "La estrategia RISE", "Intel presenta su estrategia RISE (Responsable, Inclusiva, Sostenible y Facilitadora) y sus objetivos para 2030, con acciones sobre el clima, el agua y los residuos.", "La estrategia conecta los objetivos medioambientales con la responsabilidad y la inclusión, e impulsa el progreso en toda la industria tecnológica.", "Estrategia de sostenibilidad RISE de Intel"],
+      ["UN COMPROMISO A LARGO PLAZO", "Cero emisiones netas para 2040", "Intel se compromete a alcanzar cero emisiones netas de gases de efecto invernadero (alcances 1 y 2) en sus operaciones globales para 2040.", "Un objetivo claro ofrece un destino común a los equipos y socios. Alcanzarlo requiere un esfuerzo sostenido en instalaciones, energía y fabricación.", "Compromiso de Intel con cero emisiones netas"],
+      ["ENERGÍA PARA EL PROGRESO", "99 % de electricidad renovable", "La empresa alcanza un 99 % de uso de electricidad renovable en todo el mundo, ayudando a reducir las emisiones de carbono y avanzar en sus objetivos de sostenibilidad.", "Este hito demuestra cómo las decisiones de compra y suministro pueden cambiar la energía que impulsa las operaciones globales, mientras continúa el trabajo hacia objetivos a largo plazo.", "Electricidad renovable para las operaciones de Intel"],
+      ["COLABORACIÓN A GRAN ESCALA", "Cumbre de sostenibilidad", "Intel organiza su primera Cumbre de Sostenibilidad y reúne a proveedores, responsables públicos y líderes del sector para colaborar en una fabricación sostenible de semiconductores.", "Las cadenas de suministro de semiconductores están conectadas. Reunir a los socios ayuda a convertir los retos compartidos sobre clima, agua y residuos en acciones coordinadas.", "Cumbre de sostenibilidad de Intel"]
+    ]
+  },
+  fr: {
+    pageTitle: "Intel : la durabilité au fil du temps",
+    languageLabel: "Langue",
+    heroTitle: "La durabilité au fil du temps",
+    heroIntro: "Découvrez le parcours d'Intel et comment son engagement envers l'innovation contribue à un avenir plus durable pour la technologie et la planète.",
+    timelineHeading: "Chronologie des progrès",
+    timelineIntro: "Découvrez les étapes qui façonnent un avenir plus durable pour la technologie",
+    carouselLabel: "Chronologie du développement durable d'Intel",
+    previous: "Étape précédente",
+    next: "Étape suivante",
+    goTo: "Aller à l'année",
+    sustainabilityHeading: "Construire un avenir plus durable",
+    areas: [
+      ["Action climatique", "Réduire les émissions et progresser vers des activités à zéro émission nette."],
+      ["Gestion de l'eau", "Préserver l'eau et soutenir des bassins versants en bonne santé."],
+      ["Réduction des déchets", "Réduire les déchets grâce au réemploi et à des pratiques circulaires."]
+    ],
+    milestones: [
+      ["LES DÉBUTS", "Fondation d'Intel", "Robert Noyce et Gordon Moore renomment NM Electronics, la nouvelle entreprise, Intel Corporation, posant les bases de décennies d'innovation technologique.", "Tout parcours vers la durabilité commence par les choix d'une entreprise. L'engagement initial d'Intel envers l'innovation permettra de repenser la conception et la fabrication de l'informatique.", "Robert Noyce et Gordon Moore, fondateurs d'Intel"],
+      ["L'INFORMATIQUE REPENSÉE", "Le premier microprocesseur", "Intel présente le 4004, premier microprocesseur commercial au monde, qui déclenche la révolution des microprocesseurs et ouvre la voie aux appareils informatiques.", "Placer la puissance de calcul sur une minuscule puce a changé les possibilités de la technologie. Des générations d'appareils plus petits et plus performants ont ensuite étendu l'informatique au quotidien.", "Microprocesseur Intel 4004"],
+      ["UNE ARCHITECTURE DURABLE", "Le processeur 8086", "Le processeur 8086 établit l'architecture x86 qui équipe d'innombrables PC et serveurs aujourd'hui.", "Une architecture commune a permis aux logiciels et au matériel d'évoluer au fil des générations. Cette plateforme continue de soutenir de nouvelles approches de la performance et de l'efficacité informatique.", "Processeur Intel 8086"],
+      ["PLUS DE CAPACITÉ", "Le processeur 386", "Intel présente le processeur 386 et son architecture 32 bits, ouvrant une nouvelle ère de performances et de multitâche pour les ordinateurs personnels.", "Des processeurs plus puissants ont permis des logiciels plus riches et de nouvelles façons de travailler. Le défi suivant consistait à offrir ces capacités en utilisant l'énergie plus efficacement.", "Processeur Intel 386"],
+      ["UN TOURNANT", "Pic des émissions de gaz à effet de serre", "Cette année marque le niveau annuel le plus élevé des émissions de gaz à effet de serre des activités d'Intel. Par la suite, Intel investit dans la réduction des émissions chimiques, les énergies renouvelables et une fabrication écoénergétique.", "La mesure de ce pic a rendu l'ampleur du défi visible. L'investissement à long terme dans des activités plus propres est devenu essentiel pour inverser la tendance.", "Étape liée aux émissions de gaz à effet de serre"],
+      ["OBJECTIFS POUR 2030", "La stratégie RISE", "Intel lance sa stratégie RISE (Responsable, Inclusive, Durable et Facilitatrice) et ses objectifs pour 2030, axés sur le climat, l'eau et la réduction des déchets.", "Cette stratégie associe les objectifs environnementaux à la responsabilité et à l'inclusion, et encourage le progrès dans l'ensemble du secteur technologique.", "Stratégie de développement durable RISE d'Intel"],
+      ["UN ENGAGEMENT À LONG TERME", "Zéro émission nette d'ici 2040", "Intel s'engage à atteindre zéro émission nette de gaz à effet de serre (scopes 1 et 2) dans ses activités mondiales d'ici 2040.", "Un objectif clair donne une destination commune aux équipes et aux partenaires. Pour l'atteindre, il faut agir durablement sur les sites, l'énergie et la fabrication.", "Engagement d'Intel vers le zéro émission nette"],
+      ["L'ÉNERGIE DU PROGRÈS", "99 % d'électricité renouvelable", "L'entreprise atteint 99 % d'électricité renouvelable dans le monde, contribuant à réduire les émissions de carbone et à faire progresser ses objectifs de durabilité.", "Cette étape montre comment les décisions d'achat et d'approvisionnement peuvent transformer l'énergie des activités mondiales, tandis que les efforts à long terme se poursuivent.", "Électricité renouvelable pour les activités d'Intel"],
+      ["COLLABORER À GRANDE ÉCHELLE", "Sommet sur le développement durable", "Intel organise son premier sommet sur le développement durable et réunit fournisseurs, responsables publics et dirigeants du secteur pour promouvoir une fabrication durable des semi-conducteurs.", "Les chaînes d'approvisionnement des semi-conducteurs sont interconnectées. Réunir les partenaires aide à transformer les défis communs liés au climat, à l'eau et aux déchets en actions coordonnées.", "Sommet sur le développement durable d'Intel"]
+    ]
+  },
+  ar: {
+    pageTitle: "إنتل: الاستدامة عبر العصور",
+    languageLabel: "اللغة",
+    heroTitle: "الاستدامة عبر العصور",
+    heroIntro: "اكتشف رحلة إنتل عبر الزمن، وكيف أسهم التزامها بالابتكار في بناء مستقبل أكثر استدامة للتقنية وكوكبنا.",
+    timelineHeading: "مسيرة التقدم",
+    timelineIntro: "اكتشف المحطات التي تسهم في بناء مستقبل أكثر استدامة للتقنية",
+    carouselLabel: "الخط الزمني لاستدامة إنتل",
+    previous: "المحطة السابقة",
+    next: "المحطة التالية",
+    goTo: "انتقل إلى عام",
+    sustainabilityHeading: "نحو مستقبل أكثر استدامة",
+    areas: [
+      ["العمل المناخي", "خفض الانبعاثات والعمل نحو عمليات بصافي انبعاثات صفري."],
+      ["الإدارة المسؤولة للمياه", "الحفاظ على المياه ودعم أحواض مائية سليمة."],
+      ["تقليل النفايات", "تقليل النفايات من خلال إعادة الاستخدام والممارسات الدائرية."]
+    ],
+    milestones: [
+      ["البداية", "تأسيس إنتل", "أعاد روبرت نويس وغوردون مور تسمية شركتهما الجديدة، NM Electronics، لتصبح إنتل، واضعين أساس عقود من الابتكار التقني.", "تبدأ كل رحلة نحو الاستدامة بالخيارات التي تتخذها الشركة. وقد أتاح تركيز إنتل المبكر على الابتكار إعادة التفكير في تصميم الحوسبة وتصنيعها.", "روبرت نويس وغوردون مور، مؤسسا إنتل"],
+      ["إعادة تصور الحوسبة", "أول معالج دقيق", "قدمت إنتل معالج 4004، أول معالج دقيق تجاري في العالم، مطلقةً ثورة المعالجات الدقيقة وممهدةً الطريق لمستقبل أجهزة الحوسبة.", "غيّر وضع قدرة المعالجة على شريحة صغيرة ما يمكن للتقنية تحقيقه. وتبعت ذلك أجيال من الأجهزة الأصغر والأكثر قدرة، لتوسّع استخدام الحوسبة في الحياة اليومية.", "معالج إنتل الدقيق 4004"],
+      ["بنية تدوم", "معالج 8086", "أرسى معالج 8086 بنية x86 التي تشغّل عدداً هائلاً من الحواسيب الشخصية والخوادم اليوم.", "أتاحت البنية المشتركة تطور البرمجيات والأجهزة عبر أجيال متعددة. ولا تزال هذه المنصة تدعم أساليب جديدة لتحسين أداء الحوسبة وكفاءتها.", "معالج إنتل 8086"],
+      ["قدرات أكبر", "معالج 386", "قدمت إنتل معالج 386 ببنية 32 بت، مطلقةً حقبة جديدة من الأداء وتعدد المهام في الحواسيب الشخصية.", "أتاحت المعالجات الأكثر قدرة برامج أغنى وطرقاً جديدة للعمل. وكان التحدي التالي هو تقديم هذه الإمكانات مع تحسين كفاءة استهلاك الطاقة.", "معالج إنتل 386"],
+      ["نقطة تحول", "ذروة انبعاثات غازات الدفيئة", "شهد هذا العام أعلى انبعاثات سنوية لغازات الدفيئة الناتجة عن عمليات إنتل. وفي السنوات اللاحقة، استثمرت الشركة في الحد من الانبعاثات الكيميائية والطاقة المتجددة والتصنيع الموفر للطاقة.", "أظهر قياس الذروة حجم التحدي بوضوح. وأصبح الاستثمار طويل الأمد في عمليات أنظف جزءاً أساسياً من عكس هذا الاتجاه.", "محطة بارزة في انبعاثات غازات الدفيئة"],
+      ["أهداف 2030", "استراتيجية RISE", "أطلقت إنتل استراتيجية RISE (المسؤولة والشاملة والمستدامة والتمكينية) وأهدافها لعام 2030 لدفع التقدم في العمل المناخي وإدارة المياه وتقليل النفايات.", "تربط الاستراتيجية الأهداف البيئية بالمسؤولية والشمول، وتشجع التقدم في قطاع التقنية بأكمله.", "استراتيجية إنتل للاستدامة RISE"],
+      ["التزام طويل الأمد", "صافي انبعاثات صفري بحلول 2040", "أعلنت إنتل التزامها بتحقيق صافي انبعاثات صفري من غازات الدفيئة (النطاقان 1 و2) في عملياتها العالمية بحلول عام 2040.", "يوفر الهدف الواضح وجهة مشتركة للفرق والشركاء. ويتطلب تحقيقه عملاً مستمراً في المرافق والطاقة والتصنيع.", "التزام إنتل بصافي انبعاثات صفري"],
+      ["طاقة تدفع التقدم", "99٪ من الكهرباء متجددة", "حققت الشركة استخدام الكهرباء المتجددة بنسبة 99٪ حول العالم، مما يساعد على خفض انبعاثات الكربون ودعم أهداف الاستدامة طويلة الأمد.", "توضح هذه المحطة كيف يمكن لقرارات الشراء والتوريد تغيير مصادر الطاقة للعمليات العالمية، مع استمرار العمل نحو الأهداف طويلة الأمد.", "الكهرباء المتجددة لدعم عمليات إنتل"],
+      ["تعاون على نطاق واسع", "قمة الاستدامة", "استضافت إنتل أول قمة للاستدامة، وجمعت الموردين والمسؤولين الحكوميين وقادة القطاع للتعاون على تصنيع أشباه موصلات أكثر استدامة.", "ترتبط سلاسل توريد أشباه الموصلات ببعضها. ويساعد جمع الشركاء على تحويل تحديات المناخ والمياه والنفايات المشتركة إلى عمل منسق.", "قمة إنتل للاستدامة"]
+    ]
+  }
+};
+
+const languageSelect = document.querySelector("#language-select");
+const ltrStylesheet = document.querySelector("#bootstrap-ltr");
+const rtlStylesheet = document.querySelector("#bootstrap-rtl");
+
+function applyLanguage(language) {
+  const text = translations[language] || translations.en;
+  const isRightToLeft = language === "ar";
+  const slides = document.querySelectorAll(".carousel-item");
+  const indicators = document.querySelectorAll(".carousel-indicators button");
+
+  document.documentElement.lang = language;
+  document.documentElement.dir = isRightToLeft ? "rtl" : "ltr";
+  document.title = text.pageTitle;
+  ltrStylesheet.disabled = isRightToLeft;
+  rtlStylesheet.disabled = !isRightToLeft;
+  languageSelect.value = language;
+
+  document.querySelector("#language-label").textContent = text.languageLabel;
+  document.querySelector("header h1").textContent = text.heroTitle;
+  document.querySelector("header .hero-content > p").textContent = text.heroIntro;
+  document.querySelector("#timeline-heading").textContent = text.timelineHeading;
+  document.querySelector(".timeline-intro").textContent = text.timelineIntro;
+  document.querySelector("#timelineCarousel").setAttribute("aria-label", text.carouselLabel);
+  document.querySelector(".carousel-control-prev .visually-hidden").textContent = text.previous;
+  document.querySelector(".carousel-control-next .visually-hidden").textContent = text.next;
+  document.querySelector("#sustainability-heading").textContent = text.sustainabilityHeading;
+
+  slides.forEach((slide, index) => {
+    const milestone = text.milestones[index];
+    const paragraphs = slide.querySelectorAll(".milestone-copy p");
+
+    paragraphs[0].textContent = milestone[0];
+    slide.querySelector(".milestone-copy h3").textContent = milestone[1];
+    paragraphs[2].textContent = milestone[2];
+    paragraphs[3].textContent = milestone[3];
+    slide.querySelector(".milestone-image").alt = milestone[4];
+    indicators[index].setAttribute("aria-label", `${text.goTo} ${paragraphs[1].textContent}`);
+  });
+
+  document.querySelectorAll(".sustainability-item").forEach((item, index) => {
+    item.querySelector("h3").textContent = text.areas[index][0];
+    item.querySelector("p").textContent = text.areas[index][1];
+  });
+}
+
+const browserLanguage = (navigator.language || "en").slice(0, 2);
+let savedLanguage = "";
+
+try {
+  savedLanguage = localStorage.getItem("intel-language") || "";
+} catch (error) {
+  savedLanguage = "";
+}
+
+const initialLanguage = translations[savedLanguage]
+  ? savedLanguage
+  : translations[browserLanguage]
+    ? browserLanguage
+    : "en";
+
+languageSelect.addEventListener("change", () => {
+  applyLanguage(languageSelect.value);
+
+  try {
+    localStorage.setItem("intel-language", languageSelect.value);
+  } catch (error) {
+    return;
+  }
+});
+applyLanguage(initialLanguage);
