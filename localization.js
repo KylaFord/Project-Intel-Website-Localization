@@ -5,8 +5,17 @@ const translations = {
     languageLabel: "Language",
     heroTitle: "Sustainability Through the Ages",
     heroIntro: "Explore Intel's journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.",
+    heroSlides: [
+      ["Innovation for a more sustainable future", "Explore Intel's journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet."],
+      ["Progress on climate, water, and waste", "Intel's sustainability goals focus on reducing emissions, conserving water, and finding better ways to reuse materials."],
+      ["Building progress together", "Working with suppliers and communities helps advance more responsible semiconductor manufacturing around the world."]
+    ],
+    heroCarouselLabel: "Sustainability highlights",
+    heroPrevious: "Previous slide",
+    heroNext: "Next slide",
     timelineHeading: "A Timeline of Progress",
     timelineIntro: "Explore the milestones shaping a more sustainable future for technology",
+    timelineNote: "Scroll to view the timeline. Hover over a card to learn more.",
     carouselLabel: "Intel sustainability timeline",
     previous: "Previous milestone",
     next: "Next milestone",
@@ -52,8 +61,17 @@ const translations = {
     languageLabel: "Idioma",
     heroTitle: "Sostenibilidad a través del tiempo",
     heroIntro: "Descubre el recorrido de Intel y cómo su compromiso con la innovación ha contribuido a un futuro más sostenible para la tecnología y el planeta.",
+    heroSlides: [
+      ["Innovación para un futuro más sostenible", "Descubre el recorrido de Intel y cómo su compromiso con la innovación ha contribuido a un futuro más sostenible para la tecnología y el planeta."],
+      ["Avances en clima, agua y residuos", "Los objetivos de sostenibilidad de Intel se centran en reducir emisiones, conservar agua y encontrar mejores formas de reutilizar materiales."],
+      ["Avanzar en equipo", "La colaboración con proveedores y comunidades ayuda a impulsar una fabricación de semiconductores más responsable en todo el mundo."]
+    ],
+    heroCarouselLabel: "Avances en sostenibilidad",
+    heroPrevious: "Diapositiva anterior",
+    heroNext: "Diapositiva siguiente",
     timelineHeading: "Una cronología del progreso",
     timelineIntro: "Descubre los hitos que impulsan un futuro más sostenible para la tecnología",
+    timelineNote: "Desplázate para ver la cronología. Pasa el cursor sobre una tarjeta para obtener más información.",
     carouselLabel: "Cronología de sostenibilidad de Intel",
     previous: "Hito anterior",
     next: "Hito siguiente",
@@ -99,8 +117,17 @@ const translations = {
     languageLabel: "Langue",
     heroTitle: "La durabilité au fil du temps",
     heroIntro: "Découvrez le parcours d'Intel et comment son engagement envers l'innovation contribue à un avenir plus durable pour la technologie et la planète.",
+    heroSlides: [
+      ["Innover pour un avenir plus durable", "Découvrez le parcours d'Intel et comment son engagement envers l'innovation contribue à un avenir plus durable pour la technologie et la planète."],
+      ["Agir pour le climat, l'eau et les déchets", "Les objectifs de durabilité d'Intel visent à réduire les émissions, préserver l'eau et mieux réutiliser les matériaux."],
+      ["Avancer ensemble", "La collaboration avec les fournisseurs et les communautés favorise une fabrication de semi-conducteurs plus responsable dans le monde entier."]
+    ],
+    heroCarouselLabel: "Progrès en matière de durabilité",
+    heroPrevious: "Diapositive précédente",
+    heroNext: "Diapositive suivante",
     timelineHeading: "Chronologie des progrès",
     timelineIntro: "Découvrez les étapes qui façonnent un avenir plus durable pour la technologie",
+    timelineNote: "Faites défiler la chronologie. Survolez une carte pour en savoir plus.",
     carouselLabel: "Chronologie du développement durable d'Intel",
     previous: "Étape précédente",
     next: "Étape suivante",
@@ -146,8 +173,17 @@ const translations = {
     languageLabel: "اللغة",
     heroTitle: "الاستدامة عبر العصور",
     heroIntro: "اكتشف رحلة إنتل عبر الزمن، وكيف أسهم التزامها بالابتكار في بناء مستقبل أكثر استدامة للتقنية وكوكبنا.",
+    heroSlides: [
+      ["الابتكار من أجل مستقبل أكثر استدامة", "اكتشف رحلة إنتل عبر الزمن، وكيف أسهم التزامها بالابتكار في بناء مستقبل أكثر استدامة للتقنية وكوكبنا."],
+      ["التقدم في المناخ والمياه والنفايات", "تركز أهداف إنتل للاستدامة على خفض الانبعاثات والحفاظ على المياه وإيجاد طرق أفضل لإعادة استخدام المواد."],
+      ["التقدم معاً", "يساعد التعاون مع الموردين والمجتمعات على تطوير تصنيع أشباه موصلات أكثر مسؤولية حول العالم."]
+    ],
+    heroCarouselLabel: "أبرز إنجازات الاستدامة",
+    heroPrevious: "الشريحة السابقة",
+    heroNext: "الشريحة التالية",
     timelineHeading: "مسيرة التقدم",
     timelineIntro: "اكتشف المحطات التي تسهم في بناء مستقبل أكثر استدامة للتقنية",
+    timelineNote: "مرر للاطلاع على الخط الزمني. مرر المؤشر فوق بطاقة لمعرفة المزيد.",
     carouselLabel: "الخط الزمني لاستدامة إنتل",
     previous: "المحطة السابقة",
     next: "المحطة التالية",
@@ -197,8 +233,7 @@ const rtlStylesheet = document.querySelector("#bootstrap-rtl");
 function applyLanguage(language) {
   const text = translations[language] || translations.en;
   const isRightToLeft = language === "ar";
-  const slides = document.querySelectorAll(".carousel-item");
-  const indicators = document.querySelectorAll(".carousel-indicators button");
+  const slides = document.querySelectorAll(".timeline-card");
 
   document.documentElement.lang = language;
   document.documentElement.dir = isRightToLeft ? "rtl" : "ltr";
@@ -209,12 +244,15 @@ function applyLanguage(language) {
 
   document.querySelector("#language-label").textContent = text.languageLabel;
   document.querySelector("header h1").textContent = text.heroTitle;
-  document.querySelector("header .hero-content > p").textContent = text.heroIntro;
-  document.querySelector("#timeline-heading").textContent = text.timelineHeading;
-  document.querySelector(".timeline-intro").textContent = text.timelineIntro;
-  document.querySelector("#timelineCarousel").setAttribute("aria-label", text.carouselLabel);
-  document.querySelector(".carousel-control-prev .visually-hidden").textContent = text.previous;
-  document.querySelector(".carousel-control-next .visually-hidden").textContent = text.next;
+  document.querySelectorAll(".hero-carousel .carousel-item").forEach((slide, index) => {
+    slide.querySelector("h2").textContent = text.heroSlides[index][0];
+    slide.querySelector("p").textContent = text.heroSlides[index][1];
+  });
+  document.querySelector(".hero-carousel").setAttribute("aria-label", text.heroCarouselLabel);
+  document.querySelector(".hero-carousel .carousel-control-prev").setAttribute("aria-label", text.heroPrevious);
+  document.querySelector(".hero-carousel .carousel-control-next").setAttribute("aria-label", text.heroNext);
+  document.querySelector("#timeline").setAttribute("aria-label", text.carouselLabel);
+  document.querySelector(".timeline-note").textContent = text.timelineNote;
   document.querySelector("#sustainability-heading").textContent = text.sustainabilityHeading;
   document.querySelector(".subscription-kicker").textContent = text.subscriptionKicker;
   document.querySelector("#subscription-heading").textContent = text.subscriptionHeading;
@@ -234,14 +272,10 @@ function applyLanguage(language) {
 
   slides.forEach((slide, index) => {
     const milestone = text.milestones[index];
-    const paragraphs = slide.querySelectorAll(".milestone-copy p");
 
-    paragraphs[0].textContent = milestone[0];
-    slide.querySelector(".milestone-copy h3").textContent = milestone[1];
-    paragraphs[2].textContent = milestone[2];
-    paragraphs[3].textContent = milestone[3];
-    slide.querySelector(".milestone-image").alt = milestone[4];
-    indicators[index].setAttribute("aria-label", `${text.goTo} ${paragraphs[1].textContent}`);
+    slide.querySelector("h3").textContent = milestone[1];
+    slide.querySelector("p").textContent = milestone[2];
+    slide.querySelector("img").alt = milestone[4];
   });
 
   document.querySelectorAll(".sustainability-item").forEach((item, index) => {
@@ -279,9 +313,8 @@ languageSelect.addEventListener("change", () => {
 
 document.querySelectorAll(".sustainability-button").forEach(button => {
   button.addEventListener("click", () => {
-    const carouselElement = document.querySelector("#timelineCarousel");
-    const carousel = bootstrap.Carousel.getOrCreateInstance(carouselElement);
-    carousel.to(Number(button.dataset.slideIndex));
+    const milestone = document.querySelectorAll(".timeline-card")[Number(button.dataset.timelineIndex)];
+    milestone.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
   });
 });
 
