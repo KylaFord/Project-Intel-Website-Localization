@@ -58,7 +58,8 @@ header {
 
 .language-picker select {
 	max-width: 160px;
-	padding: 7px 32px 7px 12px;
+	min-height: 48px;
+	padding: 10px 32px 10px 12px;
 	color: #f4fcff;
 	background-color: rgba(5, 35, 58, 0.46);
 	border: 1px solid rgba(143, 211, 232, 0.7);
@@ -249,17 +250,46 @@ html[lang="ar"] .milestone-kicker {
 }
 
 .timeline-carousel .carousel-indicators {
+	left: 0;
+	right: 0;
 	bottom: 4px;
 	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 0;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2px;
 }
 
 .timeline-carousel .carousel-indicators [data-bs-target] {
+	position: relative;
+	flex: 0 0 44px;
+	width: 44px;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 6px;
+	background-color: transparent;
+	opacity: 1;
+}
+
+.timeline-carousel .carousel-indicators [data-bs-target]::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
 	width: 9px;
 	height: 9px;
-	margin: 0 5px;
-	border: 0;
 	border-radius: 50%;
 	background-color: var(--blue);
+	content: "";
+	transform: translate(-50%, -50%);
+}
+
+.timeline-carousel .carousel-indicators [data-bs-target].active::after {
+	width: 13px;
+	height: 13px;
+	background-color: #28b7c5;
 }
 
 .timeline-carousel .carousel-control-prev,
@@ -272,6 +302,33 @@ html[lang="ar"] .milestone-kicker {
 	border-radius: 50%;
 	background-color: var(--navy);
 	opacity: 0.92;
+}
+
+.timeline-carousel .carousel-control-prev-icon,
+.timeline-carousel .carousel-control-next-icon {
+	width: auto;
+	height: auto;
+	background-image: none;
+	color: var(--white);
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 1;
+}
+
+html[dir="ltr"] .timeline-carousel .carousel-control-prev-icon::before {
+	content: "\2190";
+}
+
+html[dir="ltr"] .timeline-carousel .carousel-control-next-icon::before {
+	content: "\2192";
+}
+
+html[dir="rtl"] .timeline-carousel .carousel-control-prev-icon::before {
+	content: "\2192";
+}
+
+html[dir="rtl"] .timeline-carousel .carousel-control-next-icon::before {
+	content: "\2190";
 }
 
 .timeline-carousel .carousel-control-prev {
@@ -369,13 +426,14 @@ html[lang="ar"] .milestone-kicker {
 
 	.timeline-carousel .carousel-control-prev,
 	.timeline-carousel .carousel-control-next {
-		width: 40px;
-		height: 40px;
+		width: 48px;
+		height: 48px;
 	}
 
 	.timeline-carousel {
-		padding-right: 44px;
-		padding-left: 44px;
+		padding-right: 52px;
+		padding-bottom: 100px;
+		padding-left: 52px;
 	}
 
 	.timeline-carousel .carousel-control-prev {
