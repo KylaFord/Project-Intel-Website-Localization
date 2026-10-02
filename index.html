@@ -206,29 +206,72 @@
     </section>
   </main>
 
-  <!-- Three sustainability areas displayed in Bootstrap columns -->
+  <!-- Sustainability topics displayed in responsive Bootstrap columns -->
   <section class="sustainability-section" aria-labelledby="sustainability-heading">
     <h2 id="sustainability-heading">Building a More Sustainable Future</h2>
     <div class="container sustainability-container">
-      <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-        <article class="col sustainability-item">
-          <i class="bi bi-cloud-sun sustainability-icon" aria-hidden="true"></i>
-          <h3>Climate Action</h3>
-          <p>Reducing emissions and working toward net-zero operations.</p>
-        </article>
-        <article class="col sustainability-item">
-          <i class="bi bi-droplet sustainability-icon" aria-hidden="true"></i>
-          <h3>Water Stewardship</h3>
-          <p>Conserving water and supporting healthy watersheds.</p>
-        </article>
-        <article class="col sustainability-item">
-          <i class="bi bi-recycle sustainability-icon" aria-hidden="true"></i>
-          <h3>Waste Reduction</h3>
-          <p>Reducing waste through reuse and more circular practices.</p>
-        </article>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+        <div class="col">
+          <article class="sustainability-item">
+            <h3 id="climate-heading"><i class="bi bi-cloud-sun sustainability-icon" aria-hidden="true"></i><span>Climate Action</span></h3>
+            <p>Reducing emissions and working toward net-zero operations.</p>
+            <a class="sustainability-button" href="#timelineCarousel" data-slide-index="6" aria-label="Learn more about climate action"><span class="button-label">Learn More</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+        <div class="col">
+          <article class="sustainability-item">
+            <h3 id="water-heading"><i class="bi bi-droplet sustainability-icon" aria-hidden="true"></i><span>Water Stewardship</span></h3>
+            <p>Conserving water and supporting healthy watersheds.</p>
+            <a class="sustainability-button" href="#timelineCarousel" data-slide-index="5" aria-label="Learn more about water stewardship"><span class="button-label">Learn More</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+        <div class="col">
+          <article class="sustainability-item">
+            <h3 id="waste-heading"><i class="bi bi-recycle sustainability-icon" aria-hidden="true"></i><span>Waste Reduction</span></h3>
+            <p>Reducing waste through reuse and more circular practices.</p>
+            <a class="sustainability-button" href="#timelineCarousel" data-slide-index="8" aria-label="Learn more about waste reduction"><span class="button-label">Learn More</span><i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
       </div>
     </div>
   </section>
+
+  <section class="subscription-section" aria-labelledby="subscription-heading">
+    <div class="subscription-content">
+      <div class="subscription-copy">
+        <p class="subscription-kicker">SUSTAINABILITY UPDATES</p>
+        <h2 id="subscription-heading">Sustainability, delivered thoughtfully</h2>
+        <p class="subscription-intro">Get occasional updates on responsible computing, climate action, water stewardship, and circular manufacturing.</p>
+      </div>
+      <form id="subscription-form" class="subscription-form">
+        <div class="subscription-fields">
+          <div class="subscription-field">
+            <label id="name-label" for="subscription-name">Full name</label>
+            <input id="subscription-name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+          </div>
+          <div class="subscription-field">
+            <label id="email-label" for="subscription-email">Email address</label>
+            <input id="subscription-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required />
+          </div>
+          <div class="subscription-field">
+            <label id="address-label" for="subscription-address">Mailing address</label>
+            <input id="subscription-address" name="address" type="text" autocomplete="street-address" placeholder="Street address" required />
+          </div>
+          <div class="subscription-field">
+            <label id="phone-label" for="subscription-phone">Phone number</label>
+            <input id="subscription-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Include country code" required />
+          </div>
+        </div>
+        <button id="subscribe-button" class="subscription-submit" type="submit">Subscribe</button>
+        <p id="subscription-status" class="subscription-note" aria-live="polite">Demo form only. Your details are not sent or saved.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p id="footer-title">Sustainability Through the Ages</p>
+    <p id="footer-note">An educational timeline about technology and sustainability.</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="localization.js"></script>
 </body>

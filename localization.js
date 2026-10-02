@@ -12,6 +12,24 @@ const translations = {
     next: "Next milestone",
     goTo: "Go to",
     sustainabilityHeading: "Building a More Sustainable Future",
+    subscriptionKicker: "SUSTAINABILITY UPDATES",
+    subscriptionHeading: "Sustainability, delivered thoughtfully",
+    subscriptionIntro: "Get occasional updates on responsible computing, climate action, water stewardship, and circular manufacturing.",
+    nameLabel: "Full name",
+    namePlaceholder: "Your name",
+    emailLabel: "Email address",
+    emailPlaceholder: "name@example.com",
+    addressLabel: "Mailing address",
+    addressPlaceholder: "Street address",
+    phoneLabel: "Phone number",
+    phonePlaceholder: "Include country code",
+    subscribeButton: "Subscribe",
+    subscriptionNote: "Demo form only. Your details are not sent or saved.",
+    subscriptionDemoMessage: "Thanks for your interest. This demo does not send or save your contact details.",
+    footerTitle: "Sustainability Through the Ages",
+    footerNote: "An educational timeline about technology and sustainability.",
+    learnMore: "Learn More",
+    learnMoreAbout: ["Learn more about climate action", "Learn more about water stewardship", "Learn more about waste reduction"],
     areas: [
       ["Climate Action", "Reducing emissions and working toward net-zero operations."],
       ["Water Stewardship", "Conserving water and supporting healthy watersheds."],
@@ -41,6 +59,24 @@ const translations = {
     next: "Hito siguiente",
     goTo: "Ir al año",
     sustainabilityHeading: "Construir un futuro más sostenible",
+    subscriptionKicker: "ACTUALIZACIONES DE SOSTENIBILIDAD",
+    subscriptionHeading: "Novedades sobre sostenibilidad, con criterio",
+    subscriptionIntro: "Recibe novedades ocasionales sobre informática responsable, acción climática, gestión del agua y fabricación circular.",
+    nameLabel: "Nombre completo",
+    namePlaceholder: "Tu nombre",
+    emailLabel: "Correo electrónico",
+    emailPlaceholder: "nombre@ejemplo.com",
+    addressLabel: "Dirección postal",
+    addressPlaceholder: "Calle y número",
+    phoneLabel: "Número de teléfono",
+    phonePlaceholder: "Incluye el prefijo del país",
+    subscribeButton: "Suscribirme",
+    subscriptionNote: "Formulario de demostración. Tus datos no se envían ni se guardan.",
+    subscriptionDemoMessage: "Gracias por tu interés. Esta demostración no envía ni guarda tus datos de contacto.",
+    footerTitle: "Sostenibilidad a través del tiempo",
+    footerNote: "Cronología educativa sobre tecnología y sostenibilidad.",
+    learnMore: "Más información",
+    learnMoreAbout: ["Más información sobre acción climática", "Más información sobre gestión del agua", "Más información sobre reducción de residuos"],
     areas: [
       ["Acción climática", "Reducir las emisiones y avanzar hacia operaciones con cero emisiones netas."],
       ["Gestión del agua", "Conservar el agua y apoyar cuencas hidrográficas saludables."],
@@ -70,6 +106,24 @@ const translations = {
     next: "Étape suivante",
     goTo: "Aller à l'année",
     sustainabilityHeading: "Construire un avenir plus durable",
+    subscriptionKicker: "ACTUALITÉS SUR LA DURABILITÉ",
+    subscriptionHeading: "La durabilité, avec discernement",
+    subscriptionIntro: "Recevez ponctuellement des actualités sur l'informatique responsable, le climat, la gestion de l'eau et la fabrication circulaire.",
+    nameLabel: "Nom complet",
+    namePlaceholder: "Votre nom",
+    emailLabel: "Adresse e-mail",
+    emailPlaceholder: "nom@exemple.com",
+    addressLabel: "Adresse postale",
+    addressPlaceholder: "Adresse",
+    phoneLabel: "Numéro de téléphone",
+    phonePlaceholder: "Indicatif du pays inclus",
+    subscribeButton: "S'abonner",
+    subscriptionNote: "Formulaire de démonstration. Vos coordonnées ne sont ni envoyées ni enregistrées.",
+    subscriptionDemoMessage: "Merci de votre intérêt. Cette démonstration n'envoie ni n'enregistre vos coordonnées.",
+    footerTitle: "La durabilité au fil du temps",
+    footerNote: "Chronologie pédagogique sur la technologie et la durabilité.",
+    learnMore: "En savoir plus",
+    learnMoreAbout: ["En savoir plus sur l'action climatique", "En savoir plus sur la gestion de l'eau", "En savoir plus sur la réduction des déchets"],
     areas: [
       ["Action climatique", "Réduire les émissions et progresser vers des activités à zéro émission nette."],
       ["Gestion de l'eau", "Préserver l'eau et soutenir des bassins versants en bonne santé."],
@@ -99,6 +153,24 @@ const translations = {
     next: "المحطة التالية",
     goTo: "انتقل إلى عام",
     sustainabilityHeading: "نحو مستقبل أكثر استدامة",
+    subscriptionKicker: "تحديثات الاستدامة",
+    subscriptionHeading: "مستجدات الاستدامة بمسؤولية",
+    subscriptionIntro: "احصل على تحديثات دورية حول الحوسبة المسؤولة والعمل المناخي وإدارة المياه والتصنيع الدائري.",
+    nameLabel: "الاسم الكامل",
+    namePlaceholder: "اسمك",
+    emailLabel: "البريد الإلكتروني",
+    emailPlaceholder: "name@example.com",
+    addressLabel: "العنوان البريدي",
+    addressPlaceholder: "عنوان الشارع",
+    phoneLabel: "رقم الهاتف",
+    phonePlaceholder: "أضف رمز الدولة",
+    subscribeButton: "اشترك",
+    subscriptionNote: "هذا نموذج تجريبي. لن يتم إرسال بياناتك أو حفظها.",
+    subscriptionDemoMessage: "شكراً لاهتمامك. هذا النموذج لا يرسل بيانات الاتصال أو يحفظها.",
+    footerTitle: "الاستدامة عبر العصور",
+    footerNote: "خط زمني تعليمي حول التقنية والاستدامة.",
+    learnMore: "اعرف المزيد",
+    learnMoreAbout: ["اعرف المزيد عن العمل المناخي", "اعرف المزيد عن إدارة المياه", "اعرف المزيد عن تقليل النفايات"],
     areas: [
       ["العمل المناخي", "خفض الانبعاثات والعمل نحو عمليات بصافي انبعاثات صفري."],
       ["الإدارة المسؤولة للمياه", "الحفاظ على المياه ودعم أحواض مائية سليمة."],
@@ -144,6 +216,21 @@ function applyLanguage(language) {
   document.querySelector(".carousel-control-prev .visually-hidden").textContent = text.previous;
   document.querySelector(".carousel-control-next .visually-hidden").textContent = text.next;
   document.querySelector("#sustainability-heading").textContent = text.sustainabilityHeading;
+  document.querySelector(".subscription-kicker").textContent = text.subscriptionKicker;
+  document.querySelector("#subscription-heading").textContent = text.subscriptionHeading;
+  document.querySelector(".subscription-intro").textContent = text.subscriptionIntro;
+  document.querySelector("#name-label").textContent = text.nameLabel;
+  document.querySelector("#subscription-name").placeholder = text.namePlaceholder;
+  document.querySelector("#email-label").textContent = text.emailLabel;
+  document.querySelector("#subscription-email").placeholder = text.emailPlaceholder;
+  document.querySelector("#address-label").textContent = text.addressLabel;
+  document.querySelector("#subscription-address").placeholder = text.addressPlaceholder;
+  document.querySelector("#phone-label").textContent = text.phoneLabel;
+  document.querySelector("#subscription-phone").placeholder = text.phonePlaceholder;
+  document.querySelector("#subscribe-button").textContent = text.subscribeButton;
+  document.querySelector("#subscription-status").textContent = text.subscriptionNote;
+  document.querySelector("#footer-title").textContent = text.footerTitle;
+  document.querySelector("#footer-note").textContent = text.footerNote;
 
   slides.forEach((slide, index) => {
     const milestone = text.milestones[index];
@@ -158,8 +245,10 @@ function applyLanguage(language) {
   });
 
   document.querySelectorAll(".sustainability-item").forEach((item, index) => {
-    item.querySelector("h3").textContent = text.areas[index][0];
+    item.querySelector("h3 span").textContent = text.areas[index][0];
     item.querySelector("p").textContent = text.areas[index][1];
+    item.querySelector(".button-label").textContent = text.learnMore;
+    item.querySelector(".sustainability-button").setAttribute("aria-label", text.learnMoreAbout[index]);
   });
 }
 
@@ -187,4 +276,19 @@ languageSelect.addEventListener("change", () => {
     return;
   }
 });
+
+document.querySelectorAll(".sustainability-button").forEach(button => {
+  button.addEventListener("click", () => {
+    const carouselElement = document.querySelector("#timelineCarousel");
+    const carousel = bootstrap.Carousel.getOrCreateInstance(carouselElement);
+    carousel.to(Number(button.dataset.slideIndex));
+  });
+});
+
+document.querySelector("#subscription-form").addEventListener("submit", event => {
+  event.preventDefault();
+  const text = translations[languageSelect.value] || translations.en;
+  document.querySelector("#subscription-status").textContent = text.subscriptionDemoMessage;
+});
+
 applyLanguage(initialLanguage);
